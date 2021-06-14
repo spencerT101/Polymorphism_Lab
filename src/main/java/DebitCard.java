@@ -1,4 +1,4 @@
-public class DebitCard implements IScan {
+public class DebitCard extends BankCard implements IScan {
     private String cardNumber;
     private int sortCode;
     private int accountNumber;
@@ -9,13 +9,12 @@ public class DebitCard implements IScan {
         this.cardNumber = cardNumber;
         this.sortCode = sortCode;
         this.accountNumber = accountNumber;
-        this.expiryDate = expiryDate;
-        this.securityNumber = securityNumber;
+
     }
 
-    public String getCardNumber() {
-        return this.cardNumber;
-    }
+//    public String getCardNumber() {
+//        return this.cardNumber;
+//    }
 
     public int getSortCode() {
         return this.sortCode;
@@ -25,13 +24,13 @@ public class DebitCard implements IScan {
         return this.accountNumber;
     }
 
-    public String getExpiryDate() {
-        return this.expiryDate;
-    }
-
-    public int getSecurityNumber() {
-        return this.securityNumber;
-    }
+//    public String getExpiryDate() {
+//        return this.expiryDate;
+//    }
+//
+//    public int getSecurityNumber() {
+//        return this.securityNumber;
+//    }
 
     public String scan() {
         return "Payment Complete";

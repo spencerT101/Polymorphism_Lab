@@ -1,4 +1,4 @@
-public class CreditCard implements IScan{
+public class CreditCard extends BankCard implements IScan{
     private String cardNumber;
     private String expiryDate;
     private int securityNumber;
@@ -9,17 +9,17 @@ public class CreditCard implements IScan{
         this.securityNumber = securityNumber;
     }
 
-    public String getCardNumber() {
-        return this.cardNumber;
-    }
-
-    public String getExpiryDate() {
-        return this.expiryDate;
-    }
-
-    public int getSecurityNumber() {
-        return this.securityNumber;
-    }
+//    public String getCardNumber() {
+//        return this.cardNumber;
+//    }
+//
+//    public String getExpiryDate() {
+//        return this.expiryDate;
+//    }
+//
+//    public int getSecurityNumber() {
+//        return this.securityNumber;
+//    }
 
     public String scan() {
         return "Payment Successful";
